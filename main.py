@@ -110,7 +110,7 @@ def delete(id_num):
     print("deleted!")
     return redirect(url_for("home"))
 
-@app.route("/adding/<movie_object>")
+@app.route("/adding/<MovieDetails:movie_object>")
 def adding_movie(movie_object):
     with app.app_context():
         db.create_all()
