@@ -116,7 +116,7 @@ def adding_movie(movie_object):
         db.create_all()
         new_movie = Movie(
             title=movie_object.title,
-            year=movie_object.year,
+            year= str("movie_object.year"),
             description=movie_object.description,
             rating=movie_object.rating,
             ranking=movie_object.ranking,
